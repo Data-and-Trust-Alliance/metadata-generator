@@ -1,0 +1,18 @@
+<div class="data-format-editor">
+  <div class="data-format-data">
+    <div class="data-format-field">
+      <label class="label-small">Data format</label>
+      <select class="data-facet-value-select" (change)="optionUpdated()" [(ngModel)]=dataFormatOptionSelected>
+        @for (dataFormatOption of dataFormatOptions; track dataFormatOption) {
+        <option>{{dataFormatOption}}</option>
+        }
+      </select>
+      <input class="data-facet-value-text-input" [(ngModel)]=dataFormat.value placeholder="Enter data format here" [style.display]="dataFormatOptionSelected === 'Other' ? 'inherit' : 'none'"/>
+    </div>
+    <div class="button-group">
+      <div class="trash-icon-div">
+        <i class="fa fa-trash-o" (click)=remove.emit(dataFormat.uuid)></i>
+      </div>
+    </div>
+  </div>
+</div>

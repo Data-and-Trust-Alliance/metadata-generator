@@ -1,0 +1,13 @@
+<div class="organization-viewer">
+  <div class="organization-data">
+    <div class="organization-name">
+      <label class="label-small">Organization name</label>
+      <input class="data-facet-value-text-input" [(ngModel)]=organization.name disabled/>
+    </div>
+  </div>
+  <div class="address-data">
+    @for (addressLine of organization.addressLines; track addressLine) {
+    <app-address-line-viewer [addressLine]=addressLine/>
+    }
+  </div>
+</div>

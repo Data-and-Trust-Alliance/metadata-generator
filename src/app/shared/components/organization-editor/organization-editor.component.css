@@ -1,0 +1,21 @@
+.organization-data {
+  display: flex;
+}
+
+.organization-editor {
+  display: block;
+}
+
+.organization-name {
+  align-content: center;
+  width: 100%;
+}
+
+.organization-name input {
+  font-size: 16px;
+  width: 95%;
+}
+
+.organization-name label {
+  font-size: 10px;
+}

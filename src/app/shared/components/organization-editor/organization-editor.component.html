@@ -1,0 +1,29 @@
+<div class="organization-editor">
+  <div class="organization-data">
+    <div class="organization-name">
+      <label class="label-small">Organization name</label>
+      <input class="data-facet-value-text-input" name="nameInput" #nameInput="ngModel" [(ngModel)]=organization.name placeholder="Enter organization name here" required/>
+      @if(nameInput.hasError('required') && (nameInput.dirty || nameInput.touched)) {
+      <div class="form-field-error">
+        This field is required
+      </div>
+      }
+    </div>
+    <div class="button-group">
+      <div class="copy-icon-div">
+        <i class="fa fa-copy" (click)=copy.emit(organization.uuid)></i>
+      </div>
+      <div class="trash-icon-div">
+        <i class="fa fa-trash-o" (click)=remove.emit(organization.uuid)></i>
+      </div>
+    </div>
+  </div>
+  <div class="address-data">
+    @for (addressLine of organization.addressLines; track addressLine) {
+    <app-address-line-editor [addressLine]=addressLine (copy)=copyAddressLine($event) (remove)=removeAddressLine($event)/>
+    }
+    <div>
+      <button class="button" (click)="addAddressLine()">Add address line</button>
+    </div>
+  </div>
+</div>

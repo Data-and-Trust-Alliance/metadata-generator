@@ -1,0 +1,53 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <i class="checkbox-instructions">{{ checkboxInstructions }}</i>
+  </div>
+  <div class="data-facet-value">
+    @for (checkboxOption of checkboxOptions; track checkboxOption) {
+    <div>
+      <div class="checkbox-option">
+        <input type="checkbox" [(ngModel)]="checkboxOption.enabled" (change)=handleNoneSelected(checkboxOption.label)/>
+        <label>{{ checkboxOption.label }}</label>
+      </div>
+      @for (detailsEntry of checkboxOption.detailsEntries; track detailsEntry) {
+      <div class="multiple-field-container" [style.display]="(checkboxOption.enabled && checkboxOption.detailsEnabled) ? 'flex' : 'none'">
+        <div class="trash-icon-div">
+          <i class="fa fa-trash-o" (click)="removeDetails(checkboxOption.uuid, detailsEntry.uuid)"></i>
+        </div>
+        <div class="multiple-field-section">
+          <label class="label-small">{{ checkboxOption.detailsLabel }}</label>
+          <input class="data-facet-value-text-input" name="detailsInput" #detailsInput="ngModel" type="text" placeholder={{checkboxOption.detailsPreviewText}} [(ngModel)]=detailsEntry.value required/>
+          @if(detailsInput.hasError('required') && (detailsInput.dirty || detailsInput.touched)) {
+          <div class="form-field-error">
+            This field is required
+          </div>
+          }
+        </div>
+      </div>
+      }
+      <button class="button" (click)="addEntry(checkboxOption.uuid)" [style.display]="(checkboxOption.enabled && checkboxOption.detailsEnabled) ? 'flex' : 'none'">{{ checkboxOption.detailsButtonText }}</button>
+      @if(checkboxOption.enabled && checkboxOption.detailsEnabled && checkboxOption.detailsEntries.length <= 0) {
+      <div class="form-field-error">
+        This requires at least one entry
+      </div>
+      }
+    </div>
+    }
+  </div>
+  @if(!checkboxSelected) {
+  <div class="form-field-error">
+    A selection is required
+  </div>
+  }
+</div>

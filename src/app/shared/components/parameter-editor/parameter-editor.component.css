@@ -1,0 +1,14 @@
+.parameter-editor {
+  display: inline-flex;
+  width: 100%;
+}
+
+.parameter-key {
+  min-width: 250px;
+  width: 45%;
+}
+
+.parameter-value {
+  min-width: 250px;
+  width: 45%;
+}

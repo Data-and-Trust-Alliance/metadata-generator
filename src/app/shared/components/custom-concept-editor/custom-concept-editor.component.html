@@ -1,0 +1,14 @@
+<div class="custom-concept-editor">
+  <div>
+    <input type="checkbox" (change)=customizeChange.emit(customize) [(ngModel)]=customize/>
+    <label class="label-small">Customize</label>
+  </div>
+  <div [style.display]="customize ? 'grid' : 'none'">
+    <label class="label-small" [style.display]="displayCode ? 'inherit' : 'none'">{{ labelTextCode }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displayCode ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextCode [(ngModel)]=concept.code/>
+    <label class="label" [style.display]="displaySystem ? 'inherit' : 'none'">{{ labelTextSystem }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displaySystem ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextSystem [(ngModel)]=concept.system/>
+    <label class="label-small" [style.display]="displayDescription ? 'inherit' : 'none'">{{ labelTextDescription }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displayDescription ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextDescription [(ngModel)]=concept.description (change)=descriptionUpdated(concept.description)/>
+  </div>
+</div>

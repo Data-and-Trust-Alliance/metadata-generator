@@ -1,0 +1,54 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>Confidentiality Classification</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <i class="checkbox-instructions">Select which of the following are known to be present within the dataset</i>
+  </div>
+  <div class="data-facet-value">
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]=noneEnabled (change)="handleCheckboxChange('None')"/>
+      <label>None</label>
+    </div>
+    @for (defaultEntry of defaultEntries; track defaultEntry) {
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="defaultEntry.enabled" (change)=handleCheckboxChange(defaultEntry.description)/>
+      <label>{{ defaultEntry.description }}</label>
+    </div>
+    }
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="customEntriesEnabled" (change)="handleCheckboxChange('Other')"/>
+      <label>Other</label>
+    </div>
+  </div>
+  <div class="data-facet-value" [style.display]="customEntriesEnabled ? 'inline' : 'none'">
+    @for (customEntry of customEntries; track customEntry) {
+    <app-confidentiality-classification-data-facet-entry [entry]=customEntry (removeEntry)="removeEntry($event)"/>
+    }
+    <button class="button" (click)="addEntry()">Add additional type of sensitivity</button>
+  </div>
+  @if(!noneEnabled && !defaultEntrySelected && !customEntriesEnabled) {
+  <div class="form-field-error">
+    A selection is required
+  </div>
+  }
+  @if(customEntriesEnabled && customEntries.length <= 0) {
+  <div class="form-field-error">
+    Selection "Other" requires at least one entry
+  </div>
+  }
+  <div class="data-facet-value">
+    @for (tool of tools; track tool) {
+    <app-confidentiality-classification-data-facet-tool-entry [entry]=tool (removeEntry)="removeTool($event)"/>
+    }
+    <button class="button" (click)="addTool()">Add confidentiality identification tool</button>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="location-editor geography-container">
+  <div class="geography-inclusion-exclusion" [style.display]="exclusionEnabled ? 'inline-flex' : 'none'">
+    <label class="switch">
+      <input type="checkbox" class="toggleButton" [(ngModel)]="location.inclusion"/>
+      <div class="slider round">
+        <span class="on">INCLUDE</span>
+        <span class="off">EXCLUDE</span>
+      </div>
+    </label>
+  </div>
+  <div class="geography-data-group">
+    <div class="location-dropdown">
+      <ngx-select-dropdown [multiple]=false [(ngModel)]="countrySelect" [config]="config" [options]="countryOptions" (change)="countryUpdated()"/>
+    </div>
+    <div class="location-dropdown" [style.display]="(enableStateField === true && stateOptions.length != 0) ? 'inline' : 'none'">
+      <ngx-select-dropdown [multiple]=false [(ngModel)]="stateSelect" [config]="config" [options]="stateOptions" (change)="stateUpdated()"/>
+    </div>
+    <div class="geography-state-button">
+      <button class="button-small" (click)="addSubregion()" [style.display]="(enableStateField === false && stateOptions.length != 0) ? 'inline' : 'none'">Add subregion</button>
+      <button class="button-small" (click)="removeSubregion()" [style.display]="(enableStateField === true && stateOptions.length != 0) ? 'inline' : 'none'">Remove subregion</button>
+    </div>
+  </div>
+  <div class="geography-button-group">
+<!--    <div class="copy-icon-div">
+      <i class="fa fa-copy" (click)=copy.emit(location.uuid)></i>
+    </div>-->
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)=remove.emit(location.uuid)></i>
+    </div>
+  </div>
+</div>
+

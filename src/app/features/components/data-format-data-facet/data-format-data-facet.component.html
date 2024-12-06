@@ -1,0 +1,21 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value" [style.display]="dataFormats.length > 0 ? 'inline' : 'none'">
+    @for (dataFormat of dataFormats; track dataFormat) {
+    <app-data-format-editor [dataFormat]=dataFormat (remove)=removeDataFormat($event)/>
+    }
+  </div>
+  <div class="data-facet-value">
+    <button class="button" (click)="addDataFormat()">Add data format</button>
+  </div>
+</div>

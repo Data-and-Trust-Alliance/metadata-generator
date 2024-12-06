@@ -1,0 +1,26 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value" [style.display]="organizations.length > 0 ? 'inline' : 'none'">
+    @for (organization of organizations; track organization) {
+    <app-organization-editor [organization]=organization (copy)=copyOrganization($event) (remove)=removeOrganization($event)/>
+    }
+  </div>
+  <div class="data-facet-value">
+    <button class="button" (click)="addOrganization()">Add data issuer</button>
+  </div>
+  @if(organizations.length <= 0) {
+  <div class="form-field-error">
+    This requires at least one entry
+  </div>
+  }
+</div>

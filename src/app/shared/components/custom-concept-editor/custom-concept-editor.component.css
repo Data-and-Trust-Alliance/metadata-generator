@@ -1,0 +1,16 @@
+.custom-concept-editor {
+  font-family: Inter;
+  width: 100%;
+}
+
+.custom-concept-label {
+  font-size: 10px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.custom-concept-value {
+  font-size: 16px;
+  width: 100%;
+  margin: 3px 0px;
+}

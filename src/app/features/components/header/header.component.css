@@ -1,0 +1,78 @@
+.header-instruction-supplemental {
+  background-color: lightgray;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  margin-block: 30px;
+  margin-left: 33%;
+  min-width: 500px;
+  padding: 10px;
+  width: 34%;
+}
+
+.header-instruction-supplemental a {
+  cursor: pointer;
+}
+
+.header-instruction-table td {
+  min-width: 100px;
+}
+
+.header-instruction-text {
+  font-family: Inter;
+  font-size: 16px;
+  margin-block: 30px;
+  margin-left: 33%;
+  min-width: 500px;
+  width: 34%;
+}
+
+.header-instruction-text hr {
+  margin-block: 10px;
+}
+
+.header-main-text {
+  font-family: Inter;
+  font-size: 30px;
+  margin: 90px 12px;
+  min-width: 500px;
+  width: 50%;
+}
+
+.header-section {
+  margin-block: 20px;
+}
+
+.header-subgroup {
+  align-items: center;
+  display: flex;
+}
+
+.header-svg {
+  width: 250px;
+}
+
+.header-svg-group {
+  margin-inline: 12px;
+  min-width: 250px;
+  width: 25%;
+}
+
+.subtitle-label {
+  color: grey;
+  font-family: Inter;
+  font-size: 22px;
+  margin: 5px;
+}
+
+.title-group {
+  min-width: 300px;
+  text-align: center;
+  width: 50%;
+}
+
+.title-label {
+  font-family: Inter;
+  font-size: 22px;
+  margin: 5px;
+}

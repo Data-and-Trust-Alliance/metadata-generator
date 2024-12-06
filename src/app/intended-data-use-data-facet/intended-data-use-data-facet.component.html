@@ -1,0 +1,73 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <i class="checkbox-instructions">Select from the following uses</i>
+  </div>
+  <div class="data-facet-value">
+    <label>Non-AI</label>
+  </div>
+  <div class="data-facet-value">
+    @for (defaultNonAiEntry of defaultNonAiEntries; track defaultNonAiEntry) {
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="defaultNonAiEntry.enabled" (change)=anyDefaultEntrySelected()/>
+      <label>{{ defaultNonAiEntry.descriptionDisplayText }}</label>
+    </div>
+    }
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="customNonAiEntriesEnabled" (change)=handleCustomNonAiEntriesClear()/>
+      <label>Other</label>
+    </div>
+  </div>
+  <div class="data-facet-value" [style.display]="customNonAiEntriesEnabled ? 'inline' : 'none'">
+    @for (customNonAiEntry of customNonAiEntries; track customNonAiEntry) {
+    <app-intended-data-use-data-facet-entry [entry]=customNonAiEntry (removeEntry)="removeNonAiEntry($event)"/>
+    }
+    <button class="button" (click)="addNonAiEntry()">Add custom entry</button>
+  </div>
+  @if(customNonAiEntriesEnabled && customNonAiEntries.length <= 0) {
+  <div class="form-field-error">
+    Selection "Other" requires at least one entry
+  </div>
+  }
+  <div class="data-facet-value">
+      <label>AI</label>
+  </div>
+  <div class="data-facet-value">
+    @for (defaultAiEntry of defaultAiEntries; track defaultAiEntry) {
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="defaultAiEntry.enabled" (change)=anyDefaultEntrySelected()/>
+      <label>{{ defaultAiEntry.descriptionDisplayText }}</label>
+    </div>
+    }
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="customAiEntriesEnabled" (change)=handleCustomAiEntriesClear()/>
+      <label>Other</label>
+    </div>
+  </div>
+  <div class="data-facet-value" [style.display]="customAiEntriesEnabled ? 'inline' : 'none'">
+    @for (customAiEntry of customAiEntries; track customAiEntry) {
+    <app-intended-data-use-data-facet-entry [entry]=customAiEntry (removeEntry)="removeAiEntry($event)"/>
+    }
+    <button class="button" (click)="addAiEntry()">Add custom entry</button>
+  </div>
+  @if(customAiEntriesEnabled && customAiEntries.length <= 0) {
+  <div class="form-field-error">
+    Selection "Other" requires at least one entry
+  </div>
+  }
+  @if(!defaultNonAiEntrySelected && !defaultAiEntrySelected && !customNonAiEntriesEnabled && !customAiEntriesEnabled) {
+  <div class="form-field-error">
+    A selection is required
+  </div>
+  }
+</div>

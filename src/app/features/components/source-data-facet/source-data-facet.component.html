@@ -1,0 +1,32 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="useDataIssuerAsSource" (change)=useDataIssuerAsSourceChange.emit(useDataIssuerAsSource)/>
+      <label>Source is the same as Data Issuer</label>
+    </div>
+  </div>
+  <div class="data-facet-value" [style.display]="useDataIssuerAsSource ? 'inline' : 'none'">
+    @for (organization of dataIssuers; track organization) {
+    <app-organization-viewer [organization]=organization/>
+    }
+  </div>
+  <div class="data-facet-value" [style.display]="!useDataIssuerAsSource ? 'inline' : 'none'">
+    @for (organization of organizations; track organization) {
+    <app-organization-editor [organization]=organization (copy)=copyOrganization($event) (remove)=removeOrganization($event)/>
+    }
+  </div>
+  <div class="data-facet-value" [style.display]="!useDataIssuerAsSource ? 'inline' : 'none'">
+    <button class="button" (click)="addOrganization()">Add source</button>
+  </div>
+</div>

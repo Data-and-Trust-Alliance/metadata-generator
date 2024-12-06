@@ -1,0 +1,14 @@
+<div class="address-line-editor">
+  <div class="address-line-data">
+    <label class="label-small">Address line</label>
+    <input class="data-facet-value-text-input" [(ngModel)]=addressLine.address placeholder="Enter address line here"/>
+  </div>
+  <div class="button-group">
+    <div class="copy-icon-div">
+      <i class="fa fa-copy" (click)=copy.emit(addressLine.uuid)></i>
+    </div>
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)=remove.emit(addressLine.uuid)></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="parameter-editor">
+  <div class="parameter-key">
+    <label class="label-small">Key</label>
+    <input class="data-facet-value-text-input" [(ngModel)]=parameter.key placeholder="Enter parameter key"/>
+  </div>
+  <div class="arrow-icon-div">
+    <i class="fa fa-arrow-right"></i>
+  </div>
+  <div class="parameter-value">
+    <label class="label-small">Value</label>
+    <input class="data-facet-value-text-input" [(ngModel)]=parameter.value placeholder="Enter parameter value"/>
+  </div>
+  <div class="button-group">
+    <div class="copy-icon-div">
+      <i class="fa fa-copy" (click)=copy.emit(parameter.uuid)></i>
+    </div>
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)=remove.emit(parameter.uuid)></i>
+    </div>
+  </div>
+</div>

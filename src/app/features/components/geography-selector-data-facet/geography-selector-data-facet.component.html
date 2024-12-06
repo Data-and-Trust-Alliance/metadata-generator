@@ -1,0 +1,37 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value" [style.display]="replicateEnabled ? 'inline' : 'none'">
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="replicateFromOtherSource" (change)="replicateFromOtherSourceUpdated(replicateFromOtherSource)"/>
+      <label>{{ replicateText }}</label>
+    </div>
+  </div>
+  @for (location of locations; track location) {
+  <div class="data-facet-value" [style.display]="replicateFromOtherSource ? 'inline' : 'none'">
+    <app-location-viewer [location]=location/>
+  </div>
+  }
+  @for (location of locations; track location) {
+  <div class="data-facet-value" [style.display]="!replicateFromOtherSource ? 'inline' : 'none'">
+    <app-location-editor [location]=location [exclusionEnabled]=exclusionEnabled (copy)="copyEntry($event)" (remove)="removeEntry($event)"/>
+  </div>
+  }
+  <div class="data-facet-value" [style.display]="!replicateFromOtherSource ? 'inline' : 'none'">
+    <button class="button" (click)="addEntry()">{{ addButtonText }}</button>
+  </div>
+  @if(locations.length < minimumNumberOfLocations) {
+  <div class="form-field-error">
+    {{ minimumNumberOfLocations > 1 ? "This requires at least " + minimumNumberOfLocations + " entries" : "This requires at least one entry" }}
+  </div>
+  }
+</div>

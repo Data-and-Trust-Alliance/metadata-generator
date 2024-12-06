@@ -1,0 +1,10 @@
+<div class="custom-concept-editor">
+  <div>
+    <label class="label-small" [style.display]="displayCode ? 'inherit' : 'none'">{{ labelTextCode }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displayCode ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextCode [(ngModel)]=concept.code/>
+    <label class="label-small" [style.display]="displaySystem ? 'inherit' : 'none'">{{ labelTextSystem }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displaySystem ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextSystem [(ngModel)]=concept.system/>
+    <label class="label-small" [style.display]="displayDescription ? 'inherit' : 'none'">{{ labelTextDescription }}</label>
+    <input class="data-facet-value-text-input" [style.display]="displayDescription ? 'inherit' : 'none'" type="text" [placeholder]=placeholderTextDescription [(ngModel)]=concept.description (change)=descriptionUpdated(concept.description)/>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <div class="checkbox-option">
+      <input type="checkbox" [(ngModel)]="previousVersionNotAvailable" (change)=handleCheckboxUpdate()/>
+      <label>Dataset has not been issued previously</label>
+    </div>
+  </div>
+  <div class="data-facet-value" [style.display]="!previousVersionNotAvailable ? 'inline' : 'none'">
+    <input class="data-facet-value-text-input" type="text" placeholder="{{ placeholderText }}" name="simpleInput" #simpleInput="ngModel" [(ngModel)]=value (change)=valueChange.emit(value) (change)=validate() [required]=dataFacetRequired/>
+    @if(simpleInput.dirty || simpleInput.touched) {
+      @if(simpleInput.hasError('required')) {
+      <div class="form-field-error">
+        This field is required
+      </div>
+      }
+      @if(value !== "" && !dateValid(value)) {
+      <div class="form-field-error">
+        This field must be in a valid datetime format.
+      </div>
+      }
+    }
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="location-viewer geography-container">
+  <div class="geography-inclusion-exclusion">
+    <label class="switch">
+      <input type="checkbox" class="toggleButton" [(ngModel)]="location.inclusion" disabled/>
+      <div class="slider round">
+        <span class="on">INCLUDE</span>
+        <span class="off">EXCLUDE</span>
+      </div>
+    </label>
+  </div>
+  <div class="geography-data-group">
+    <div class="location-dropdown" [style.display]="(location.country != '') ? 'inline' : 'none'">
+      <input type="text" [ngModel]="convertIso31661CodeToName(location.country)" disabled/>
+    </div>
+    <div class="location-dropdown" [style.display]="(location.state != '') ? 'inline' : 'none'">
+      <input type="text" [ngModel]="convertIso31662CodeToName(location.state)" disabled/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <label class="label-small">Oldest component of data contained in the dataset.</label>
+    <input class="data-facet-value-text-input" type="text" placeholder="{{ placeholderText }}" name="startInput" #startInput="ngModel" [(ngModel)]=start (change)=startChange.emit(start) [required]=dataFacetRequired/>
+    @if(startInput.dirty || startInput.touched) {
+      @if(startInput.hasError('required')) {
+      <div class="form-field-error">
+        This field is required
+      </div>
+      }
+      @if(start !== "" && !dateValid(start)) {
+      <div class="form-field-error">
+        This field must be in a valid datetime format.
+      </div>
+      }
+    }
+  </div>
+  <div class="data-facet-value">
+    <label class="label-small">Youngest component of data contained in the dataset.</label>
+    <input class="data-facet-value-text-input" type="text" placeholder="{{ placeholderText }}" name="endInput" #endInput="ngModel" [(ngModel)]=end (change)=endChange.emit(end) [required]=dataFacetRequired/>
+    @if(endInput.dirty || endInput.touched) {
+      @if(endInput.hasError('required')) {
+      <div class="form-field-error">
+        This field is required
+      </div>
+      }
+      @if(end !== "" && !dateValid(end)) {
+      <div class="form-field-error">
+        This field must be in a valid datetime format.
+      </div>
+      }
+    }
+  </div>
+  @if(start !== "" && end !== "" && !dateRangeValid(start, end)) {
+  <div class="form-field-error">
+    The start datetime must occur prior to the end datetime.
+  </div>
+  }
+</div>

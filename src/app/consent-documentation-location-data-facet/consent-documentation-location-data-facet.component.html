@@ -1,0 +1,22 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value" [style.display]="entries.length <= 0 ? 'inline' : 'none'">
+    <label>Consent not collected or not applicable</label>
+  </div>
+  <div class="data-facet-value">
+    @for (entry of entries; track entry) {
+    <app-consent-documentation-location-data-facet-entry [entry]=entry [placeholderText]=placeholderText (removeEntry)="removeEntry($event)"/>
+    }
+    <button class="button" (click)="addEntry()">Add consent location</button>
+  </div>
+</div>

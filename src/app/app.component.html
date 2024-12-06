@@ -1,0 +1,142 @@
+<main>
+  <app-header/>
+  <div class="overall-form">
+    <div class="section">
+      <div>
+        <label class="section-header">Source</label>
+      </div>
+<!--      <app-standards-version-data-facet [dataFacetEnabled]=false/>-->
+      <app-simple-text-data-facet [(dataFacetValid)]=datasetTitleValid dataFacetLabel="Dataset title/name" [dataFacetEnabled]=true [dataFacetDescription]=getDatasetTitleDescription() [(value)]=datasetTitle [placeholderText]=getDatasetTitlePlaceholder()/>
+      <app-simple-text-data-facet [(dataFacetValid)]=metadataIdValid dataFacetLabel="Unique metadata identifier" [dataFacetEnabled]=true [dataFacetDescription]=getMetadataIdDescription() [(value)]=metadataId [placeholderText]=getMetadataIdPlaceholder()/>
+      <app-simple-text-data-facet [(dataFacetValid)]=metadataLocationValid dataFacetLabel="Metadata location" [dataFacetEnabled]=true [dataFacetDescription]=getMetadataLocationDescription() [(value)]=metadataLocation [placeholderText]=getMetadataLocationPlaceholder() [dataFacetRequired]=false/>
+      <app-data-issuer-data-facet-v2 [(dataFacetValid)]=dataIssuersV2Valid dataFacetLabel="Data issuer" [dataFacetEnabled]=true [dataFacetDescription]=getDataIssuerDescription() [organizations]=dataIssuersV2/>
+      <app-simple-text-data-facet [(dataFacetValid)]=datasetDescriptionValid dataFacetLabel="Description of the dataset" [dataFacetEnabled]=true [dataFacetDescription]=getDatasetDescriptionDescription() [(value)]=datasetDescription [placeholderText]=getDatasetDescriptionPlaceholder()/>
+    </div>
+    <div class="section">
+      <div>
+        <label class="section-header">Provenance</label>
+      </div>
+      <app-source-metadata-data-facet [(dataFacetValid)]=sourceMetadatasValid dataFacetLabel="Source metadata for dataset" [dataFacetEnabled]=true [dataFacetDescription]=getSourceMetadataDescription() [entries]=sourceMetadatas/>
+      <app-source-data-facet-v2 [(dataFacetValid)]=sourcesValidV2 dataFacetLabel="Source" [dataFacetEnabled]=true [dataFacetDescription]=getSourceDescription() [organizations]=sourcesV2 [dataIssuers]=dataIssuersV2 [(useDataIssuerAsSource)]=useDataIssuerAsSource [dataFacetRequired]=false/>
+      <app-geography-selector-data-facet [(dataFacetValid)]=dataOriginLocationsValid dataFacetLabel="Data origin geography" [dataFacetEnabled]=true [dataFacetDescription]=getDataOriginLocationDescription() [(locations)]=dataOriginLocations addButtonText="Add data origin geography" [minimumNumberOfLocations]=1/>
+      <app-simple-date-data-facet [(dataFacetValid)]=datasetIssueDateValid dataFacetLabel="Dataset issue date" [dataFacetEnabled]=true [dataFacetDescription]=getDatasetIssueDateDescription() [(value)]=datasetIssueDate [placeholderText]=getDatasetIssueDatePlaceholder()/>
+      <app-previous-version-date-data-facet [(dataFacetValid)]=previousVersionDateValid dataFacetLabel="Date of previously issued version of the dataset" [dataFacetEnabled]=true [dataFacetDescription]=getPreviousVersionDateDescription() [(value)]=previousVersionDate [placeholderText]=getPreviousVersionDatePlaceholder() [dataFacetRequired]=false/>
+      <app-data-generation-date-range-data-facet [(dataFacetValid)]=dataGenerationDatesValid dataFacetLabel="Range of dates for data generation" [dataFacetEnabled]=true [dataFacetDescription]=getDataGenerationDateRangeDescription() [(start)]=dataGenerationStartDate [(end)]=dataGenerationEndDate [placeholderText]=getDataGenerationDateRangePlaceholder() [dataFacetRequired]=false/>
+      <app-method-data-facet [(dataFacetValid)]=methodsValid dataFacetLabel="Method" [dataFacetEnabled]=true [dataFacetDescription]=getMethodDescription() [methods]=methods/>
+      <app-data-format-data-facet-v2 [(dataFacetValid)]=dataFormatsValid dataFacetLabel="Data format" [dataFacetEnabled]=true [dataFacetDescription]=getDataFormatDescription() [dataFormats]=dataFormats [dataFacetRequired]=false/>
+    </div>
+    <div class="section">
+      <div>
+        <label class="section-header">Use</label>
+      </div>
+      <app-confidentiality-classification-data-facet [(dataFacetValid)]=confidentialityClassificationsValid [dataFacetEnabled]=true [dataFacetDescription]=getConfidentialityClassificationDescription() [(defaultEntries)]=defaultConfidentialityClassifications [(customEntries)]=customConfidentialityClassifications [(tools)]=confidentialityClassificationTools/>
+      <app-consent-documentation-location-data-facet [(dataFacetValid)]=consentDocumentationLocationsValid dataFacetLabel="Consent documentation location" [dataFacetEnabled]=true [dataFacetDescription]=getConsentDocumentationLocationDescription() [entries]=consentDocumentationLocations [placeholderText]=getConfidentialityClassificationPlaceholder()/>
+      <app-privacy-enhancing-technology-data-facet [(dataFacetValid)]=privacyEnhancingTechnologiesValid dataFacetLabel="Privacy enhancing technologies" [dataFacetEnabled]=true [dataFacetDescription]=getPrivacyEnhancingTechnologyDescription() [entries]=privacyEnhancingTechnologies/>
+      <app-geography-selector-data-facet [(dataFacetValid)]=dataProcessingLocationsValid dataFacetLabel="Data processing geography" [dataFacetEnabled]=true [dataFacetDescription]=getDataProcessingLocationDescription() [dataFacetRequired]=false [(locations)]=dataProcessingLocations addButtonText="Add data processing geography" [exclusionEnabled]=true [replicateEnabled]=true replicateText="Data processing geography is the same as data origin geography" (replicateChange)="dataProcessingReplicationStatusUpdate($event)"/>
+      <app-geography-selector-data-facet [(dataFacetValid)]=dataStorageLocationsValid dataFacetLabel="Data storage geography" [dataFacetEnabled]=true [dataFacetDescription]=getDataStorageLocationDescription() [dataFacetRequired]=false [(locations)]=dataStorageLocations addButtonText="Add data storage geography" [exclusionEnabled]=true [replicateEnabled]=true replicateText="Data storage geography is the same as data processing geography" (replicateChange)="dataStorageReplicationStatusUpdate($event)"/>
+      <app-checkbox-list-with-details [(dataFacetValid)]=licenseToUseValid dataFacetLabel="License to use" [dataFacetEnabled]=true [dataFacetDescription]=getLicenseDescription() checkboxInstructions="Select types of license" [checkboxOptions]=licenseToUseList/>
+      <app-intended-data-use-data-facet [(dataFacetValid)]=intendedDataUseValid dataFacetLabel="Intended data use" [dataFacetEnabled]=true [dataFacetDescription]=getIntendedDataUseDescription() [(defaultNonAiEntries)]=defaultNonAiIntendedDataUses [(customNonAiEntries)]=customNonAiIntendedDataUses [(defaultAiEntries)]=defaultAiIntendedDataUses [(customAiEntries)]=customAiIntendedDataUses/>
+      <app-checkbox-list-with-details [(dataFacetValid)]=proprietaryDataPresenceValid dataFacetLabel="Proprietary data presence" [dataFacetEnabled]=true [dataFacetDescription]=getProprietaryDataPresenceDescription() checkboxInstructions="Select types of proprietary data present" [checkboxOptions]=proprietaryDataPresenceList/>
+    </div>
+  </div>
+  <div class="download-panel">
+    <div class="download-section">
+      <i>Select file types to download</i>
+      <div class="download-option">
+        <input type="checkbox" id="csv" value="csv" [(ngModel)]="downloadOption.csv"/>
+        <label>CSV</label>
+      </div>
+      <div class="download-option">
+        <input type="checkbox" id="json" value="json" [(ngModel)]="downloadOption.json"/>
+        <label>JSON</label>
+      </div>
+      <div class="download-option">
+        <input type="checkbox" id="xml" value="xml" [(ngModel)]="downloadOption.xml"/>
+        <label>XML</label>
+      </div>
+      <div class="download-option">
+        <input type="checkbox" id="yaml" value="yaml" [(ngModel)]="downloadOption.yaml"/>
+        <label>YAML</label>
+      </div>
+    </div>
+    <div class="download-section">
+      <div class="consent-to-data-collection-container">
+        <div class="consent-to-data-collection-header">
+          <div class="consent-to-data-collection-label">
+            <label>Consent to data collection</label>
+          </div>
+          <div class="required">Required</div>
+        </div>
+        <div class="consent-to-data-collection-body">
+          <div class="privacy-policy-toggle">
+            <a [style.display]="!showMetadataPrivacyPolicy ? 'inline' : 'none'" (click)="showMetadataPrivacyPolicy = true">Show Privacy Policy</a>
+            <a [style.display]="showMetadataPrivacyPolicy ? 'inline' : 'none'" (click)="showMetadataPrivacyPolicy = false">Hide Privacy Policy</a>
+          </div>
+          <div style="text-align: center" class="metadata-privacy-policy" [style.display]="showMetadataPrivacyPolicy ? 'block' : 'none'">
+            <b>Data & Trust Alliance:  Supplemental Privacy Policy</b>
+          </div>
+          <div class="metadata-privacy-policy" [style.display]="showMetadataPrivacyPolicy ? 'block' : 'none'">
+            This supplemental privacy policy (this “Metadata Generator Supplement”) supplements the <a href="https://www.thecge.net/privacy-policy/">Center for Global Enterprise Privacy Policy</a> (the “Privacy Policy”), and applies to your use of this Metadata Generator, including your submission of personal information via this Metadata Generator.
+          </div>
+          <div class="metadata-privacy-policy" [style.display]="showMetadataPrivacyPolicy ? 'block' : 'none'">
+            We encourage you to read both this Metadata Generator Supplement and the Privacy Policy in order to receive complete information about how we process your personal information.
+          </div>
+          <div class="metadata-privacy-policy" [style.display]="showMetadataPrivacyPolicy ? 'block' : 'none'">
+            In this Metadata Generator Supplement, terms have the same meanings as in the Privacy Policy, but information refers only to information submitted via the Metadata Generator.
+          </div>
+          <div class="metadata-privacy-policy" [style.display]="showMetadataPrivacyPolicy ? 'block' : 'none'">
+            <ul>
+              <li><b>We collect a limited amount of personal information about users.</b>  There are several metadata fields that permit entry of personal information, namely:  dataset issuer; description of the dataset; source; and a license point of contact.</li>
+              <li><b>We use this information internally for a number of reasons.</b>  We collect, process, and use data internally for:</li>
+              <ul>
+                <li><b>Standards improvements.</b>  We will use the submitted information to refine our existing standards and metadata.  This will involve analyzing the data to understand its applicability and identifying areas for enhancement.</li>
+                <li><b>Creating and evolving adoption and implementation artifacts.</b>  We will utilize analytics to guide the creation of guides, best practices, and other resources that facilitate easier standards integration by organizations.</li>
+                <li><b>Metadata generator usage analytics.</b>  We will use the data to understand how the how the metadata generator is being used, allowing us to make data-driven improvements to enhance user experience and functionality.  We may also use this data to create new tools that support the data provenance standards.</li>
+              </ul>
+              <li><b>We may share this information with certain entities.</b>  We will share certain anonymized data as described below:</li>
+              <ul>
+                <li><b>With Alliance members.</b>  We will share anonymized metadata with our Alliance members to promote collaboration and collective advancement.</li>
+                <li><b>With industry members.</b>  Aggregated and anonymized analytics and trends may be shared through blog posts and industry commentary to provide broader insights and foster adoption of industry-wide standards.</li>
+              </ul>
+              <li><b>Equally important to what we will do with this information is what we will not do with this information.</b>  In particular, we will not:</li>
+              <ul>
+                <li>Monetize this information in any way;</li>
+                <li>Use this information for automated processing or profiling of individuals;</li>
+                <li>Contact individuals whose information is shared with us; or</li>
+                <li>Disclose any personal information to parties outside of the Alliance core team.</li>
+              </ul>
+              <li>All information collected via the Metadata Generator will be stored in the European Union and will be processed exclusively by Alliance staff members.</li>
+            </ul>
+          </div>
+          <div style="align-items: start; display: inline-flex;">
+            <input type="checkbox" [(ngModel)]="consentToDataCollectionAuthorized"/>
+            <label>By clicking "{{downloadButtonText}}", you acknowledge that you have read, understood, and agree to the Data & Trust Alliance’s <a href="https://www.thecge.net/terms-of-use/">Terms of Use</a> and <a href="https://www.thecge.net/privacy-policy/">Privacy Policy</a> (as supplemented by the Metadata Generator Supplement), and you acknowledge specifically that the information you provide will be processed in accordance with our Privacy Policy (as supplemented by the Metadata Generator Supplement).</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="download-section">
+      <button class="download-button" (click)="download()" [disabled]="!consentToDataCollectionAuthorized" title="Requires consent to data collection">{{downloadButtonText}}</button>
+    </div>
+    <div class="download-section">
+      <div [style.display]="downloadButtonText === 'Generate additional metadata files' ? 'inline' : 'none'">
+        <span>Thank you for generating a metadata file.</span>
+        <br/>
+        <br/>
+        <span>To generate another file, edit the metadata fields as needed, click the "Consent to data collection" checkbox, then click the "Generate additional metadata files" button.</span>
+        <br/>
+        <br/>
+        <span>To clear the form, refresh the page.</span>
+      </div>
+    </div>
+    <div class="download-section">
+      <div class="request-changes-container">
+        <label>Request changes to the Data Provenance Standards using the <a target="_blank" href="https://us14.list-manage.com/survey?u=f2c4b0ec47814ddee58d70038&id=0a9e540029"><b>Change Request Form</b></a>.</label>
+      </div>
+    </div>
+    <div class="download-section">
+      <span>© Data & Trust Alliance, 2024. The D&TA resides within the Center for Global Enterprise (CGE), a New York-based non-profit. The CGE terms of use govern your access to and use of this website. Read more about the <a href="https://www.thecge.net/terms-of-use/">terms of use</a> and <a href="https://www.thecge.net/privacy-policy/">privacy policy</a>.</span>
+    </div>
+  </div>
+</main>
+<router-outlet />

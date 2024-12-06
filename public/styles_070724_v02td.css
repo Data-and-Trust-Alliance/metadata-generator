@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjQ.ttf) format('truetype');
+}
+
+hr {
+  display: none; /*removes all rules*/
+}
+
+
+body {
+  margin: 0; /*removes white box around whole site*/
+}
+
+
+
+/*~~~~~~~~~~HEADER STYLING~~~~~~~~~~*/
+
+.header-section {
+  margin: 0px 0px 96px 0px !important; /*Spacing at bottom of header*/
+}
+
+
+/*Top 'nav bar'*/
+
+.header-subgroup {
+  padding: 12px 24px !important;
+  border-bottom: 1px solid black;
+  display: flex !important;
+  gap: 0px;
+}
+
+.header-svg-group {
+  width: 25% !important;
+  margin-inline: 0px !important;
+}
+
+.header-svg-group a {
+  display: block;
+  width: 95% !important; /*ensures no collisions*/
+  max-width: 150px;
+}
+
+.header-svg-group a svg{
+  width: 100% !important;
+}
+
+.title-group {
+  width: 50% !important;
+}
+
+.title-label, .subtitle-label{
+  font-size: 1em !important;
+  margin: 0px !important;
+}
+
+.title-label::after {
+  content: "\00a0" !important; /*adds a space after title label*/
+}
+
+
+/*Intro para*/
+
+.header-main-text {
+ margin: 72px 24px !important; 
+}
+
+
+/*Instructions and links*/
+
+.header-instruction-text {
+  margin: 0px auto 72px !important;
+  border-top: none;
+  padding-top: 12px;
+}
+
+.header-instruction-text ~ .header-instruction-text {
+  /*Adds bar above How It Works section*/
+  border-top: 1px solid black !important;
+}
+
+.header-instruction-table {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #d9d9d9 !important;
+}
+
+.header-instruction-table td {
+  vertical-align: baseline; /*top-aligns all numbers with their text*/
+}
+
+.header-instruction-supplemental {
+  margin: auto !important;
+  margin-bottom: 24px !important;
+  padding: 18px !important;
+  background-color: #eee !important;;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+
+/*~~~~~~~~~~STANDARD STYLING~~~~~~~~~~*/
+
+.overall-form {
+  padding: 96px 24px !important; /*increase space at top*/
+  background-color: #eee !important;
+}
+
+.section-header {
+  /*Standard title*/
+  letter-spacing: -0.8px;
+}
+
+app-standards-version-data-facet {
+  display: none;
+}
+
+/*Metadata styling*/
+
+.data-facet {
+  border: 0px !important;
+  border-radius: 8px !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.data-facet-value {
+  padding: 0px !important; /*Data input box alignment*/
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.data-facet-key {
+  /*Metadata header*/
+  gap: 8px !important; /*Spread out required and description tags*/
+}
+
+.required {
+  background-color: #DA0000 !important;
+}
+
+.form-field-error{
+  color: #DA0000 !important;
+}
+
+.data-facet-description-toggle {
+  /*See description toggle*/
+  text-wrap: nowrap;
+  padding: 4px 0; 
+}
+
+.data-facet-description {
+  /*Metadata field description*/
+  display: block;
+  line-height: 132% !important;
+  padding-bottom: 8px;
+}
+
+.data-facet-value i, .checkbox-instructions {
+  display: block;
+  font-size: 0.8em !important;
+  padding-bottom: 6px;
+}
+
+.multiple-field-container {
+  padding: 0px 0px 12px !important;
+}
+
+.multiple-field-section {
+  margin: 0px !important;
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.subpoint {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-small {
+  margin: 0px !important;
+  padding: 8px 0px 3px !important;
+}
+
+.multiple-field-section > .label-small:first-child {
+  padding: 0px 0px 3px !important;
+}
+
+.data-facet-value-text-input {
+  /*Input field: more space + correct width*/
+  padding: 8px !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*Geo selector style*/
+
+.geography-container {
+  display: flex !important;
+  gap: 8px;
+}
+
+.geography-inclusion-exclusion {
+  padding: 0px !important;
+}
+
+.geography-data-group {
+  width: 100%;
+}
+
+.location-dropdown {
+  width: 100% !important;
+  padding: 0px !important;
+  /*display: flex;
+  align-self: stretch !important;
+  align-items: center !important;*/
+}
+
+.ngx-select-dropdown {
+  background-color: blue;
+}
+
+.form-field-error {
+  padding-top: 3px;
+}
+
+
+/*NEED TO SORT OUT BUTTON SPACING*/
+
+/*Button styling*/
+
+.trash-icon-div, .copy-icon-div{
+  margin-right: 8px !important;
+  padding: 0px !important;
+  width: 36px;
+  border-radius: 4px;
+  color: #9d9d9d !important;
+  font-size: 21px !important;
+  text-align: center;
+  align-self: stretch !important;
+  align-content: center;
+}
+
+.trash-icon-div:hover, .copy-icon-div:hover{
+  color: black !important;
+  background-color: #eee !important;
+}
+
+.fa {
+  width: 100% !important;
+  padding: 4px 0px !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+/*Add text below buttons*/
+
+/*
+.trash-icon-div .fa::after {
+  display: block;
+  font-family: Inter;
+  content: "REMOVE";
+  padding-top: 2px;
+  font-size: 6pt;
+  font-weight: 600;
+}
+
+.copy-icon-div::after {
+  display: block;
+  font-family: Inter;
+  content: "COPY";
+  padding-top: 2px;
+  font-size: 6pt;
+}
+*/
+
+/*Add button styling*/
+
+.section button:not(.ngx-dropdown-button) {
+  /*Avoids targeting dropdowns and download button*/
+  border: none !important;
+  background-color: #eee;
+}
+
+.section button:not(.ngx-dropdown-button)::before {
+  /*Avoids targeting dropdowns*/
+  color: #6b6b6b;
+  content: "\002B" "\00a0" /*adds a plus sign and a space before content*/
+}
+
+
+/*Checkbox*/
+
+.checkbox-option {
+  margin: 0px;
+  padding: 6px 0px !important;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start
+}
+
+input[type='checkbox'] {
+  display: block;
+  margin: 3px 0px;
+}
+
+/*Can't actually restyle the checkbox---need a pseudoelement*/
+
+
+
+/*~~~~~~~~~~~DOWNLOAD SECTION~~~~~~~~~~*/
+
+.download-panel {
+  padding: 72px 0px !important;
+  gap: 24px !important;
+  background-color: #CCC !important;
+  color: black !important;
+}
+
+.download-section {
+  width: 50% !important;
+  min-width: 500px;
+  margin: auto;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.consent-to-data-collection-container {
+  width: 100% !important;
+  background-color: #eee !important;
+  border: none !important;
+  border-radius: 8px !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.privacy-policy-toggle {
+  display: block;
+  margin: 12px 0px !important;
+  text-align: left !important;
+  text-decoration: underline;
+  font-weight: 400 !important;
+}
+
+.metadata-privacy-policy {
+  width: 100% !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.download-button {
+  width: 66%;
+  margin: auto;
+  padding: 12px 24px !important;
+  background-color: #fff;
+  color: black;
+  border: none !important;
+}
+
+.download-button[disabled=""]{
+  background-color: #DDD;
+  color: #999
+}
+
+.request-changes-container {
+  margin-top: 72px;
+  background-color: #BBB !important;
+}
+
+.request-changes-container a {
+  color: black;
+}
+

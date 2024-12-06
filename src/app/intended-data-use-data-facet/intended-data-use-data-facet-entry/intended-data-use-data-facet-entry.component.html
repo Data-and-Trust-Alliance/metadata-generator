@@ -1,0 +1,10 @@
+<div class="multiple-field-container">
+  <div class="trash-icon-div">
+    <i class="fa fa-trash-o" (click)="removeIntendedDataUse(entry.uuid)"></i>
+  </div>
+  <div class="multiple-field-section">
+    <div class="subpoint">
+      <app-custom-concept-editor-v2 [(concept)]=entry/>
+    </div>
+  </div>
+</div>

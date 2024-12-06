@@ -1,0 +1,2079 @@
+.data-provenance-standards {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.02em;
+  	font-weight: 300;
+}
+.learn-more-about {
+  	position: relative;
+}
+.content {
+  	border-radius: 24px;
+  	border: 1px solid #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px 18px;
+}
+.content-parent {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 24px;
+  	font-size: 16px;
+  	color: #fff;
+}
+.header {
+  	width: 1440px;
+  	background-color: #000;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 180px 24px;
+  	box-sizing: border-box;
+  	gap: 48px;
+}
+.standard {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 2px 4px;
+}
+.yes-icon {
+  	width: 12px;
+  	position: relative;
+  	border-radius: 12px;
+  	height: 12px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.metadata {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 0px 4px;
+  	gap: 8px;
+}
+.metadata6 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 0px 4px;
+  	gap: 8px;
+  	color: #6e6e6e;
+}
+.standard-parent {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 4px;
+}
+.frame-group {
+  	width: 330px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px 0px 0px;
+  	box-sizing: border-box;
+  	gap: 12px;
+}
+.standard7 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 48px;
+  	color: #9d9d9d;
+}
+.metadata-name {
+  	flex: 1;
+  	position: relative;
+  	font-size: 24px;
+  	color: #000;
+}
+.required1 {
+  	position: relative;
+  	letter-spacing: 0.01em;
+  	text-transform: uppercase;
+  	font-weight: 600;
+}
+.required {
+  	border-radius: 24px;
+  	background-color: #ff0000;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 4px 6px;
+}
+.div {
+  	position: relative;
+  	letter-spacing: 0.01em;
+  	font-weight: 500;
+}
+.whats-this {
+  	border-radius: 24px;
+  	background-color: #000;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 7px;
+  	text-align: center;
+}
+.metadata-name-block {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 5px;
+}
+.whisper-text {
+  	flex: 1;
+  	position: relative;
+}
+.caret {
+  	align-self: stretch;
+  	border-radius: 24px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 12px;
+  	color: #535353;
+}
+.dropdown {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+  	padding: 12px;
+  	font-size: 16px;
+  	color: #000;
+}
+.metadata45 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 12px;
+}
+.entry-box {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+}
+.shorttext {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 16px;
+  	color: #9d9d9d;
+}
+.whats-this3 {
+  	border-radius: 24px;
+  	background-color: #000;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 7px;
+  	text-align: center;
+  	font-size: 10px;
+  	color: #fff;
+}
+.metadata48 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 12px;
+  	font-size: 24px;
+  	color: #000;
+}
+.button-child {
+  	width: 14px;
+  	position: relative;
+  	height: 14px;
+}
+.button {
+  	border-radius: 24px;
+  	background-color: #eee;
+  	border: 2px solid #13e3ff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 16px;
+  	gap: 12px;
+}
+.add-button {
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 0px 0px;
+  	font-size: 16px;
+  	color: #000;
+}
+.click1 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 12px;
+  	color: #fff;
+}
+.metadata-name-block5 {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 5px;
+  	color: #fff;
+}
+.title-text {
+  	position: relative;
+  	font-weight: 600;
+}
+.entry-box3 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+  	font-size: 16px;
+  	color: #9d9d9d;
+}
+.shorttext3 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 6px;
+}
+.line {
+  	width: 24px;
+  	position: relative;
+  	border-radius: 0px 0px 0px 4px;
+  	border-bottom: 1px solid #9d9d9d;
+  	border-left: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	height: 40px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.shorttext4 {
+  	flex: 1;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 6px;
+}
+.subpoint {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 0px 12px;
+}
+.multiple-field-container {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 12px;
+  	gap: 12px;
+}
+.add-button1 {
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 0px 0px;
+  	font-size: 16px;
+}
+.click2 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 10px;
+}
+.entry-box5 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 2px solid #13e3ff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+  	font-size: 16px;
+  	color: #9d9d9d;
+}
+.this-field-is {
+  	position: relative;
+  	color: #ff0000;
+}
+.button2 {
+  	border-radius: 24px;
+  	background-color: #eee;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 16px;
+  	gap: 12px;
+}
+.entry-box7 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+  	font-size: 16px;
+  	color: #111;
+}
+.entry-box8 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+  	font-size: 16px;
+}
+.multiple-field-container2 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 18px;
+  	gap: 12px;
+}
+.metadata49 {
+  	border-radius: 5px;
+  	border: 2px solid #9747ff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+  	color: #000;
+}
+.standard6 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 24px;
+}
+.metadata-name-block9 {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 5px;
+  	font-size: 10px;
+  	color: #fff;
+}
+.default-value {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #eee;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 12px;
+}
+.add-button4 {
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 0px 0px;
+}
+.metadata-name-block10 {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 5px;
+  	font-size: 10px;
+}
+.shorttext12 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #9d9d9d;
+}
+.add-button5 {
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 0px 0px;
+  	color: #000;
+}
+.shorttext13 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.whisper-text15 {
+  	flex: 1;
+  	position: relative;
+  	z-index: 0;
+}
+.caret1 {
+  	width: 13px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 0px;
+  	left: 228px;
+  	border-radius: 24px;
+  	height: 19px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: none;
+  	z-index: 1;
+}
+.whisper-text-parent {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 12px;
+  	position: relative;
+  	gap: 99px;
+  	color: #9d9d9d;
+}
+.metadata51 {
+  	border-radius: 5px;
+  	border: 2px solid #9747ff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+  	font-size: 16px;
+}
+.metadata-name-block12 {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 5px;
+  	font-size: 24px;
+}
+.checkbox {
+  	width: 24px;
+  	position: relative;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 2px solid #13e3ff;
+  	box-sizing: border-box;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.checkbox-statement {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.checkbox-icon {
+  	width: 24px;
+  	position: relative;
+  	border-radius: 4px;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.entry-box14 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #eee;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+  	font-size: 16px;
+  	color: #9d9d9d;
+}
+.callback {
+  	width: 636px;
+  	border-radius: 8px;
+  	background-color: #eee;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 12px;
+  	box-sizing: border-box;
+  	gap: 12px;
+  	font-size: 10px;
+}
+.checkbox1 {
+  	width: 24px;
+  	position: relative;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.checkbox-statement2 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	color: #9d9d9d;
+}
+.multiple-field-container6 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 18px;
+  	gap: 12px;
+  	font-size: 10px;
+}
+.arrow-icon {
+  	width: 9px;
+  	position: relative;
+  	height: 4px;
+  	object-fit: contain;
+}
+.dropdown1 {
+  	width: 12px;
+  	height: 23px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 0px;
+  	box-sizing: border-box;
+}
+.content2 {
+  	flex: 1;
+  	border-top: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 0px 0px;
+}
+.item {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.spacer {
+  	align-self: stretch;
+  	width: 24px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.spacer1 {
+  	align-self: stretch;
+  	width: 48px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.geographies {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	border: 1px solid #9d9d9d;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 12px;
+  	gap: 8px;
+  	font-size: 12px;
+}
+.click23 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 12px;
+  	color: #000;
+}
+.metadata53 {
+  	border-radius: 5px;
+  	border: 2px solid #9747ff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+  	color: #fff;
+}
+.entry-box22 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #eee;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px;
+}
+.shorttext22 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #eee;
+}
+.caret2 {
+  	border-radius: 24px;
+  	height: 19px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 12px;
+  	color: #535353;
+}
+.entry-box25 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding: 12px;
+  	font-size: 16px;
+}
+.subpoint8 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 0px 48px;
+}
+.click25 {
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	gap: 10px;
+  	color: #000;
+}
+.standard9 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 24px;
+  	color: #000;
+}
+.select-which-of {
+  	width: 602px;
+  	position: relative;
+  	display: inline-block;
+}
+.checkbox3 {
+  	width: 24px;
+  	position: relative;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #535353;
+  	box-sizing: border-box;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.checkbox-line-item {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.select-which-of-the-following-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px 0px 0px;
+  	gap: 12px;
+  	font-size: 16px;
+  	color: #000;
+}
+.checkbox-statement5 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	font-size: 16px;
+  	color: #000;
+}
+.checkbox-statement6 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	font-size: 16px;
+}
+.checkbox-statement8 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	font-size: 16px;
+  	color: #000;
+}
+.include2 {
+  	position: relative;
+  	text-transform: uppercase;
+  	font-weight: 600;
+}
+.include1 {
+  	align-self: stretch;
+  	flex: 1;
+  	border-radius: 24px;
+  	background-color: #535353;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 0px;
+}
+.include {
+  	width: 94px;
+  	border-radius: 24px;
+  	background-color: #eee;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 10px;
+  	color: #fff;
+}
+.geographies2 {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	border: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	height: 164px;
+  	overflow-y: auto;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 12px;
+  	gap: 8px;
+  	font-size: 12px;
+}
+.geographies3 {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	background-color: #eee;
+  	border: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	height: 164px;
+  	overflow-y: auto;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 12px;
+  	gap: 8px;
+  	font-size: 12px;
+}
+.metadata62 {
+  	border-radius: 5px;
+  	border: 2px solid #9747ff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+  	font-size: 16px;
+  	color: #000;
+}
+.subpoint15 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0px 0px 0px 12px;
+  	font-size: 10px;
+}
+.add-button26 {
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 0px 0px 18px 36px;
+}
+.select-types-of-license-group {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px 0px 0px;
+  	gap: 12px;
+  	font-size: 16px;
+  	color: #000;
+}
+.metadata64 {
+  	border-radius: 5px;
+  	border: 2px solid #9747ff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+}
+.metadata44 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 80px;
+  	font-size: 10px;
+  	color: #fff;
+}
+.frame-parent {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 24px;
+}
+.body {
+  	width: 1440px;
+  	background-color: #eee;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 96px 24px;
+  	box-sizing: border-box;
+  	font-size: 12px;
+  	color: #000;
+}
+.checkbox-line-item33 {
+  	width: 648px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.select-file-types-to-download-parent {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.content19 {
+  	width: 212px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.download-button {
+  	border-radius: 36px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 12px 24px;
+  	font-size: 24px;
+  	color: #000;
+}
+.footer {
+  	width: 1440px;
+  	background-color: #000;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 96px 24px 120px;
+  	box-sizing: border-box;
+  	gap: 48px;
+  	font-size: 16px;
+  	color: #fff;
+}
+.desktop {
+  	width: 100%;
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	text-align: left;
+  	font-size: 72px;
+  	color: rgba(255, 255, 255, 0.87);
+  	font-family: Inter;
+}
+
+
+.add-data-processing {
+  	width: 555px;
+  	position: relative;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frame-child {
+  	width: 12px;
+  	position: relative;
+  	height: 12px;
+}
+.add-data-processing-geography-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+}
+.lit {
+  	width: 82px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 4px;
+  	left: 4px;
+  	border-radius: 24px;
+  	background-color: #535353;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	z-index: 0;
+}
+.include14 {
+  	position: relative;
+  	text-transform: uppercase;
+  	font-weight: 600;
+}
+.include13 {
+  	align-self: stretch;
+  	flex: 1;
+  	border-radius: 24px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 0px;
+  	z-index: 1;
+}
+.exclude1 {
+  	position: relative;
+  	text-transform: uppercase;
+}
+.exclude {
+  	align-self: stretch;
+  	flex: 1;
+  	border-radius: 24px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 0px;
+  	z-index: 2;
+  	color: #9d9d9d;
+}
+.include12 {
+  	width: 180px;
+  	border-radius: 24px;
+  	background-color: #eee;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 4px;
+  	box-sizing: border-box;
+  	position: relative;
+  	gap: 8px;
+  	font-size: 10px;
+  	color: #fff;
+}
+.available-geographies {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.selected-geographies {
+  	position: absolute;
+  	top: 0px;
+  	left: 472px;
+}
+.arrow-icon11 {
+  	position: absolute;
+  	top: calc(50% - 5.5px);
+  	left: calc(50% - 6.5px);
+  	width: 14px;
+  	height: 28px;
+}
+.search-icon {
+  	width: 11px;
+  	position: relative;
+  	height: 11px;
+}
+.search-bar {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px;
+  	gap: 12px;
+}
+.search {
+  	width: 448px;
+  	background-color: #eee;
+  	border-bottom: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+}
+.add-all {
+  	position: relative;
+}
+.add-button28 {
+  	border-radius: 24px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+}
+.arrow-icon12 {
+  	width: 9px;
+  	position: relative;
+  	height: 4px;
+  	object-fit: contain;
+}
+.dropdown12 {
+  	width: 12px;
+  	height: 23px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 0px;
+  	box-sizing: border-box;
+}
+.name17 {
+  	flex: 1;
+  	position: relative;
+}
+.content20 {
+  	flex: 1;
+  	border-top: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 0px 0px;
+}
+.item17 {
+  	width: 412px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.spacer11 {
+  	align-self: stretch;
+  	width: 24px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.arrow-icon13 {
+  	width: 4px;
+  	position: relative;
+  	height: 9px;
+}
+.spacer13 {
+  	align-self: stretch;
+  	width: 48px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.add-button36 {
+  	border-radius: 24px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+  	color: #9d9d9d;
+}
+.geographies6 {
+  	width: 448px;
+  	flex: 1;
+  	background-color: #eee;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	color: #000;
+}
+.available-geos {
+  	position: absolute;
+  	top: 33px;
+  	left: 0px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.selected-geos {
+  	position: absolute;
+  	top: 33px;
+  	left: 472px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.available-geographies-parent {
+  	width: 921px;
+  	position: relative;
+  	height: 479px;
+  	font-size: 16px;
+}
+.data-processing-geography {
+  	position: relative;
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+
+
+.add-data-storage {
+  	width: 555px;
+  	position: relative;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frame-item {
+  	width: 12px;
+  	position: relative;
+  	height: 12px;
+}
+.add-data-storage-geography-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+}
+.lit1 {
+  	width: 82px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 4px;
+  	left: 4px;
+  	border-radius: 24px;
+  	background-color: #535353;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	z-index: 0;
+}
+.include17 {
+  	position: relative;
+  	text-transform: uppercase;
+  	font-weight: 600;
+}
+.include16 {
+  	align-self: stretch;
+  	flex: 1;
+  	border-radius: 24px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 0px;
+  	z-index: 1;
+}
+.exclude3 {
+  	position: relative;
+  	text-transform: uppercase;
+}
+.exclude2 {
+  	align-self: stretch;
+  	flex: 1;
+  	border-radius: 24px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 0px;
+  	z-index: 2;
+  	color: #9d9d9d;
+}
+.include15 {
+  	width: 180px;
+  	border-radius: 24px;
+  	background-color: #eee;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 4px;
+  	box-sizing: border-box;
+  	position: relative;
+  	gap: 8px;
+  	font-size: 10px;
+  	color: #fff;
+}
+.available-geographies1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.selected-geographies1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 472px;
+}
+.arrow-icon21 {
+  	position: absolute;
+  	top: calc(50% - 5.5px);
+  	left: calc(50% - 6.5px);
+  	width: 14px;
+  	height: 28px;
+}
+.search-icon2 {
+  	width: 11px;
+  	position: relative;
+  	height: 11px;
+}
+.search5 {
+  	position: relative;
+}
+.search-bar2 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px;
+  	gap: 12px;
+}
+.search4 {
+  	width: 448px;
+  	background-color: #eee;
+  	border-bottom: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+}
+.add-button47 {
+  	border-radius: 24px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+}
+.arrow-icon22 {
+  	width: 9px;
+  	position: relative;
+  	height: 4px;
+  	object-fit: contain;
+}
+.dropdown21 {
+  	width: 12px;
+  	height: 23px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 0px;
+  	box-sizing: border-box;
+}
+.name35 {
+  	flex: 1;
+  	position: relative;
+}
+.content38 {
+  	flex: 1;
+  	border-top: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 0px 0px;
+}
+.item35 {
+  	width: 412px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.spacer22 {
+  	align-self: stretch;
+  	width: 24px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.arrow-icon23 {
+  	width: 4px;
+  	position: relative;
+  	height: 9px;
+}
+.spacer24 {
+  	align-self: stretch;
+  	width: 48px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.add-button55 {
+  	border-radius: 24px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+  	color: #9d9d9d;
+}
+.geographies8 {
+  	width: 448px;
+  	flex: 1;
+  	background-color: #eee;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	color: #000;
+}
+.available-geos1 {
+  	position: absolute;
+  	top: 33px;
+  	left: 0px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.selected-geos1 {
+  	position: absolute;
+  	top: 33px;
+  	left: 472px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.available-geographies-group {
+  	width: 921px;
+  	position: relative;
+  	height: 479px;
+  	font-size: 16px;
+}
+.data-storage-geography {
+  	position: relative;
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+
+
+.add-data-format {
+  	width: 555px;
+  	position: relative;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frame-inner {
+  	width: 12px;
+  	position: relative;
+  	height: 12px;
+}
+.add-data-format-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+}
+.available-formats {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.selected-formats {
+  	position: absolute;
+  	top: 0px;
+  	left: 472px;
+}
+.arrow-icon31 {
+  	position: absolute;
+  	top: calc(50% - 5.5px);
+  	left: calc(50% - 6.5px);
+  	width: 14px;
+  	height: 28px;
+}
+.search-icon4 {
+  	width: 11px;
+  	position: relative;
+  	height: 11px;
+}
+.search9 {
+  	position: relative;
+}
+.search-bar4 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px;
+  	gap: 12px;
+}
+.search8 {
+  	width: 448px;
+  	background-color: #eee;
+  	border-bottom: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	color: #9d9d9d;
+}
+.arrow-icon32 {
+  	width: 4px;
+  	position: relative;
+  	height: 9px;
+}
+.dropdown30 {
+  	width: 12px;
+  	height: 23px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 0px;
+  	box-sizing: border-box;
+}
+.add-button66 {
+  	border-radius: 24px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+}
+.content56 {
+  	flex: 1;
+  	border-top: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 0px 0px;
+}
+.item53 {
+  	width: 412px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.arrow-icon34 {
+  	width: 9px;
+  	position: relative;
+  	height: 4px;
+  	object-fit: contain;
+}
+.spacer33 {
+  	align-self: stretch;
+  	width: 24px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.add-button70 {
+  	border-radius: 24px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+  	color: #9d9d9d;
+}
+.geographies10 {
+  	width: 448px;
+  	flex: 1;
+  	background-color: #eee;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	box-sizing: border-box;
+  	gap: 8px;
+}
+.please-specify {
+  	flex: 1;
+  	position: relative;
+}
+.specify-other {
+  	flex: 1;
+  	border-bottom: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 1px 0px;
+  	color: #9d9d9d;
+}
+.content65 {
+  	flex: 1;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.search10 {
+  	width: 448px;
+  	background-color: #eee;
+  	border-top: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+}
+.available-geos2 {
+  	position: absolute;
+  	top: 33px;
+  	left: 0px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+}
+.search11 {
+  	width: 448px;
+  	background-color: #eee;
+  	border-bottom: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+}
+.geographies11 {
+  	width: 448px;
+  	flex: 1;
+  	background-color: #eee;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	color: #000;
+}
+.selected-geos2 {
+  	position: absolute;
+  	top: 33px;
+  	left: 472px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.available-formats-parent {
+  	width: 921px;
+  	position: relative;
+  	height: 479px;
+  	font-size: 16px;
+}
+.data-format {
+  	position: relative;
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+
+
+.add-data-origin {
+  	width: 555px;
+  	position: relative;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frame-child1 {
+  	width: 12px;
+  	position: relative;
+  	height: 12px;
+}
+.add-data-origin-geography-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+}
+.available-geographies2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.selected-geographies2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 472px;
+}
+.arrow-icon38 {
+  	position: absolute;
+  	top: calc(50% - 5.5px);
+  	left: calc(50% - 6.5px);
+  	width: 14px;
+  	height: 28px;
+}
+.search-icon6 {
+  	width: 11px;
+  	position: relative;
+  	height: 11px;
+}
+.search14 {
+  	position: relative;
+}
+.search-bar6 {
+  	align-self: stretch;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	border: 1px solid #9d9d9d;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px;
+  	gap: 12px;
+}
+.search13 {
+  	width: 448px;
+  	background-color: #eee;
+  	border-bottom: 1px solid #9d9d9d;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 18px;
+}
+.add-button78 {
+  	border-radius: 24px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+}
+.arrow-icon39 {
+  	width: 9px;
+  	position: relative;
+  	height: 4px;
+  	object-fit: contain;
+}
+.dropdown36 {
+  	width: 12px;
+  	height: 23px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 0px;
+  	box-sizing: border-box;
+}
+.name65 {
+  	flex: 1;
+  	position: relative;
+}
+.content68 {
+  	flex: 1;
+  	border-top: 1px solid #9d9d9d;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 0px 0px;
+}
+.item65 {
+  	width: 412px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.spacer38 {
+  	align-self: stretch;
+  	width: 24px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.arrow-icon40 {
+  	width: 4px;
+  	position: relative;
+  	height: 9px;
+}
+.spacer40 {
+  	align-self: stretch;
+  	width: 48px;
+  	position: relative;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.add-button86 {
+  	border-radius: 24px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 4px 6px;
+  	color: #9d9d9d;
+}
+.geographies12 {
+  	width: 448px;
+  	flex: 1;
+  	background-color: #eee;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	padding: 18px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	color: #000;
+}
+.available-geos3 {
+  	position: absolute;
+  	top: 33px;
+  	left: 0px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.selected-geos3 {
+  	position: absolute;
+  	top: 33px;
+  	left: 472px;
+  	border-radius: 4px;
+  	height: 446px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #9d9d9d;
+}
+.available-geographies-container {
+  	width: 921px;
+  	position: relative;
+  	height: 479px;
+  	font-size: 16px;
+}
+.data-origin-geography {
+  	position: relative;
+  	border-radius: 8px;
+  	background-color: #fff;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+
