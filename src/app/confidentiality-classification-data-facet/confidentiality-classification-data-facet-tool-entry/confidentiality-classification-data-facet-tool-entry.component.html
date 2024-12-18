@@ -3,7 +3,9 @@
     <label class="label-small">Confidentiality identification tool</label>
     <input class="data-facet-value-text-input" type="text" placeholder="Enter specified tool name and version here" [(ngModel)]="entry.value"/>
   </div>
-  <div class="trash-icon-div">
-    <i class="fa fa-trash-o" (click)="removeTool(entry.uuid)"></i>
+  <div class="button-group">
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)="removeTool(entry.uuid)"></i>
+    </div>
   </div>
 </div>

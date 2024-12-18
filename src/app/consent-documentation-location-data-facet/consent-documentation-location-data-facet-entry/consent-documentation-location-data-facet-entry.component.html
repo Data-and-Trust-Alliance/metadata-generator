@@ -3,7 +3,9 @@
     <label class="label-small">Consent location</label>
     <input class="data-facet-value-text-input" type="text" placeholder="{{ placeholderText }}" [(ngModel)]="entry.value"/>
   </div>
-  <div class="trash-icon-div">
-    <i class="fa fa-trash-o" (click)="removeConsentDocumentationLocation(entry.uuid)"></i>
+  <div class="button-group">
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)="removeConsentDocumentationLocation(entry.uuid)"></i>
+    </div>
   </div>
 </div>

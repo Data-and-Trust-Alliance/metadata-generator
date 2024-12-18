@@ -22,8 +22,10 @@
       </div>
       @for (detailsEntry of checkboxOption.detailsEntries; track detailsEntry) {
       <div class="multiple-field-container" [style.display]="(checkboxOption.enabled && checkboxOption.detailsEnabled) ? 'flex' : 'none'">
-        <div class="trash-icon-div">
-          <i class="fa fa-trash-o" (click)="removeDetails(checkboxOption.uuid, detailsEntry.uuid)"></i>
+        <div class="button-group">
+          <div class="trash-icon-div">
+            <i class="fa fa-trash-o" (click)="removeDetails(checkboxOption.uuid, detailsEntry.uuid)"></i>
+          </div>
         </div>
         <div class="multiple-field-section">
           <label class="label-small">{{ checkboxOption.detailsLabel }}</label>
