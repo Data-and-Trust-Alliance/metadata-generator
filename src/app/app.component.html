@@ -10,7 +10,7 @@
       <app-simple-text-data-facet [(dataFacetValid)]=metadataIdValid dataFacetLabel="Unique metadata identifier" [dataFacetEnabled]=true [dataFacetDescription]=getMetadataIdDescription() [(value)]=metadataId [placeholderText]=getMetadataIdPlaceholder()/>
       <app-simple-text-data-facet [(dataFacetValid)]=metadataLocationValid dataFacetLabel="Metadata location" [dataFacetEnabled]=true [dataFacetDescription]=getMetadataLocationDescription() [(value)]=metadataLocation [placeholderText]=getMetadataLocationPlaceholder() [dataFacetRequired]=false/>
       <app-data-issuer-data-facet-v2 [(dataFacetValid)]=dataIssuersV2Valid dataFacetLabel="Data issuer" [dataFacetEnabled]=true [dataFacetDescription]=getDataIssuerDescription() [organizations]=dataIssuersV2/>
-      <app-simple-text-data-facet [(dataFacetValid)]=datasetDescriptionValid dataFacetLabel="Description of the dataset" [dataFacetEnabled]=true [dataFacetDescription]=getDatasetDescriptionDescription() [(value)]=datasetDescription [placeholderText]=getDatasetDescriptionPlaceholder()/>
+      <app-simple-textarea-data-facet [(dataFacetValid)]=datasetDescriptionValid dataFacetLabel="Description of the dataset" [dataFacetEnabled]=true [dataFacetDescription]=getDatasetDescriptionDescription() [(value)]=datasetDescription [placeholderText]=getDatasetDescriptionPlaceholder()/>
     </div>
     <div class="section">
       <div>

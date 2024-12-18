@@ -1,0 +1,25 @@
+<div #dataFacet class="data-facet" [style.display]="dataFacetEnabled ? 'inline-grid' : 'none'">
+  <div class="data-facet-key">
+    <div class="data-facet-label">
+      <label>{{ dataFacetLabel }}</label>
+    </div>
+    <div class="required" [style.display]="dataFacetRequired ? 'flex' : 'none'">Required</div>
+    <a class="data-facet-description-toggle" [style.display]="!showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = true">See description</a>
+    <a class="data-facet-description-toggle" [style.display]="showDataFacetDescription ? 'flex' : 'none'" (click)="showDataFacetDescription = false">Hide description</a>
+  </div>
+  <div class="data-facet-value" [style.display]="showDataFacetDescription ? 'inline' : 'none'">
+    <label class="data-facet-description">{{ dataFacetDescription }}</label>
+  </div>
+  <div class="data-facet-value">
+    <textarea class="data-facet-value-text-input" type="text" placeholder="{{ placeholderText }}" name="simpleTextArea" #simpleInput="ngModel" [(ngModel)]=value (change)=valueChange.emit(value) (change)=validate() [required]=dataFacetRequired cdkTextareaAutosize></textarea>
+    @if(!dataFacetValid) {
+    <div class="alert">
+      @if(simpleTextArea.hasError('required') && (simpleTextArea.dirty || simpleTextArea.touched)) {
+      <div class="form-field-error">
+        This field is required
+      </div>
+      }
+    </div>
+    }
+  </div>
+</div>

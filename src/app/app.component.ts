@@ -31,6 +31,7 @@ import { PreviousVersionDateDataFacetComponent } from './features/components/pre
 import { PrivacyEnhancingTechnologyDataFacetComponent } from './privacy-enhancing-technology-data-facet/privacy-enhancing-technology-data-facet.component';
 import { SimpleDateDataFacetComponent } from './features/components/simple-date-data-facet/simple-date-data-facet.component';
 import { SimpleTextDataFacetComponent } from './features/components/simple-text-data-facet/simple-text-data-facet.component';
+import { SimpleTextAreaDataFacetComponent } from './features/components/simple-textarea-data-facet/simple-textarea-data-facet.component';
 import { SourceDataFacetComponentV2 } from './features/components/source-data-facet/source-data-facet.component';
 import { SourceMetadata } from './source-metadata-data-facet/source-metadata';
 import { SourceMetadataDataFacetComponent } from './source-metadata-data-facet/source-metadata-data-facet.component';
@@ -39,7 +40,7 @@ import { StandardsVersionDataFacetComponent } from './standards-version-data-fac
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CheckboxListWithDetailsComponent, ConfidentialityClassificationDataFacetComponent, ConsentDocumentationLocationDataFacetComponent, DataFacetComponent, DataFormatDataFacetComponentV2, DataGenerationDateRangeDataFacetComponent, DataIssuerDataFacetComponentV2, FormsModule, GeographySelectorDataFacetComponent, HeaderComponent, IntendedDataUseDataFacetComponent, MethodDataFacetComponent, PreviousVersionDateDataFacetComponent, PrivacyEnhancingTechnologyDataFacetComponent, RouterOutlet, SimpleDateDataFacetComponent, SimpleTextDataFacetComponent, SourceDataFacetComponentV2, SourceMetadataDataFacetComponent, StandardsVersionDataFacetComponent],
+  imports: [CheckboxListWithDetailsComponent, ConfidentialityClassificationDataFacetComponent, ConsentDocumentationLocationDataFacetComponent, DataFacetComponent, DataFormatDataFacetComponentV2, DataGenerationDateRangeDataFacetComponent, DataIssuerDataFacetComponentV2, FormsModule, GeographySelectorDataFacetComponent, HeaderComponent, IntendedDataUseDataFacetComponent, MethodDataFacetComponent, PreviousVersionDateDataFacetComponent, PrivacyEnhancingTechnologyDataFacetComponent, RouterOutlet, SimpleDateDataFacetComponent, SimpleTextDataFacetComponent, SimpleTextAreaDataFacetComponent, SourceDataFacetComponentV2, SourceMetadataDataFacetComponent, StandardsVersionDataFacetComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
