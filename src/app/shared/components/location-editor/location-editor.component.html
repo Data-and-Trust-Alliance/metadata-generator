@@ -15,7 +15,7 @@
     <div class="location-dropdown" [style.display]="(enableStateField === true && stateOptions.length != 0) ? 'inline' : 'none'">
       <ngx-select-dropdown [multiple]=false [(ngModel)]="stateSelect" [config]="config" [options]="stateOptions" (change)="stateUpdated()"/>
     </div>
-    <div class="geography-state-button">
+    <div class="geography-state-button" [style.display]="(enableStateField === true && stateOptions.length != 0) ? 'inline' : 'none'">
       <button class="button-small" (click)="addSubregion()" [style.display]="(enableStateField === false && stateOptions.length != 0) ? 'inline' : 'none'">Add subregion</button>
       <button class="button-small" (click)="removeSubregion()" [style.display]="(enableStateField === true && stateOptions.length != 0) ? 'inline' : 'none'">Remove subregion</button>
     </div>
