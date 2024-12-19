@@ -4,7 +4,9 @@
       <app-custom-concept-editor-v2 [(concept)]=entry labelTextDescription="Specify other type of sensitivity" placeholderTextDescription="Enter type of sensitivity"/>
     </div>
   </div>
-  <div class="trash-icon-div">
-    <i class="fa fa-trash-o" (click)="removeConfidentialityClassification(entry.uuid)"></i>
+  <div class="button-group">
+    <div class="trash-icon-div">
+      <i class="fa fa-trash-o" (click)="removeConfidentialityClassification(entry.uuid)"></i>
+    </div>
   </div>
 </div>

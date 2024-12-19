@@ -5,8 +5,10 @@
         <label class="label-small">Specify tool</label>
         <input class="data-facet-value-text-input" type="text" placeholder="Enter tool name and version" [(ngModel)]="entry.toolUsed"/>
       </div>
-      <div class="trash-icon-div">
-        <i class="fa fa-trash-o" (click)="removePrivacyEnhancingTechnology(entry.uuid)"></i>
+      <div class="button-group">
+        <div class="trash-icon-div">
+          <i class="fa fa-trash-o" (click)="removePrivacyEnhancingTechnology(entry.uuid)"></i>
+        </div>
       </div>
     </div>
     <div class="subpoint">
